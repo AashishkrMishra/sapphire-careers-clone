@@ -7,6 +7,12 @@ import { ValuesSection } from "@/components/ValuesSection";
 import { StatsSection } from "@/components/StatsSection";
 import { TeamSection } from "@/components/TeamSection";
 import { SocialMediaSection } from "@/components/SocialMediaSection";
+import { CallToActionSection } from "@/components/CallToActionSection";
+import { NewsletterSection } from "@/components/NewsletterSection";
+import { MainFooter } from "@/components/MainFooter";
+import { AwardsSection } from "@/components/AwardsSection";
+import { OfficeLocations } from "@/components/OfficeLocations";
+import { FooterBottom } from "@/components/FooterBottom";
 
 const Index = () => {
   const [activeTab, setActiveTab] = useState("Who we are");
@@ -143,6 +149,12 @@ const Index = () => {
       <TabNavigation activeTab={activeTab} onTabChange={setActiveTab} />
       {renderTabContent()}
       <SocialMediaSection />
+      <CallToActionSection />
+      <NewsletterSection />
+      <MainFooter />
+      <AwardsSection />
+      <OfficeLocations />
+      <FooterBottom />
     </div>
   );
 };
